@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoveToUnlock – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f9f7f4;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #fc4c02;
+      --border: #e8e4de;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 48px 24px 80px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 56px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .logo-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      letter-spacing: -0.3px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    .lang-btn {
+      padding: 6px 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 40px;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .intro strong { color: var(--text); }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: white;
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 12px; color: #333; }
+    p:last-child { margin-bottom: 0; }
+
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; color: #333; }
+
+    .highlight-box {
+      background: #fff8f5;
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .strava-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: white;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1.5px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">💪</div>
+      <span class="logo-name">MoveToUnlock</span>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('fr')">FR</button>
+    </div>
+  </header>
+
+  <!-- ===== ENGLISH ===== -->
+  <div class="lang-content active" id="lang-en">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Last updated: April 2025 &nbsp;·&nbsp; MoveToUnlock by Noah Floury</p>
+
+    <div class="intro">
+      <strong>The short version:</strong> MoveToUnlock does not collect, store, or sell your personal data on any server. Everything stays on your device. We only access your camera to count push-ups, and your Strava data only if you explicitly choose to connect your account.
+    </div>
+
+    <section>
+      <h2><span class="num">1</span> Who we are</h2>
+      <p>MoveToUnlock is an Android application developed by <strong>Noah Floury</strong>. The app helps you unlock distracting apps by earning access through physical activity — either by doing push-ups detected via your phone's front camera, or by completing workouts tracked in Strava.</p>
+      <p>If you have any questions about this policy, you can reach us at: <a href="mailto:contact@movetounlock.app">contact@movetounlock.app</a></p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span> Camera access</h2>
+      <p>MoveToUnlock uses your device's front camera to detect push-up movements in real time. Here is what you need to know:</p>
+      <ul>
+        <li>Camera processing is performed <strong>entirely on your device</strong> using Google ML Kit Pose Detection.</li>
+        <li>No video footage is recorded, saved, or transmitted anywhere.</li>
+        <li>The camera is only active when you are in a push-up detection session.</li>
+        <li>No images or biometric data ever leave your device.</li>
+      </ul>
+      <div class="highlight-box">
+        Your camera feed is used in real time and discarded immediately. We never see it, store it, or share it.
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span> Strava integration</h2>
+      <p>Connecting your Strava account is entirely optional. If you choose to connect it, here is how we handle your data:</p>
+      <ul>
+        <li>We access your Strava profile and activity data <strong>only to verify that you have completed a workout</strong> and unlock apps accordingly.</li>
+        <li>Your Strava access token is stored <strong>locally on your device</strong> (Android SharedPreferences). It is never sent to or stored on our servers.</li>
+        <li>We use a secure intermediary server (Cloudflare Worker) solely to handle the OAuth token exchange — no athlete data passes through or is retained by this server.</li>
+        <li>We do not read, store, analyze, or share any of your Strava activity details beyond what is needed to confirm workout completion.</li>
+      </ul>
+      <p>You can disconnect your Strava account at any time from within the app. When you do, your access token is immediately deleted from your device and revoked on Strava's side.</p>
+      <p style="margin-top:16px"><span class="strava-badge">⚡ Powered by Strava</span></p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> App-blocking functionality</h2>
+      <p>MoveToUnlock uses Android's Accessibility Service and UsageStats permissions to monitor and block access to apps you have chosen to restrict. This data:</p>
+      <ul>
+        <li>Is processed locally on your device only.</li>
+        <li>Is never transmitted, stored remotely, or used for any purpose other than enforcing the restrictions you set yourself.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span> Data we do NOT collect</h2>
+      <p>To be completely transparent, MoveToUnlock does not collect:</p>
+      <ul>
+        <li>Your name, email address, or any account information</li>
+        <li>Your location</li>
+        <li>Advertising identifiers</li>
+        <li>Crash reports or analytics sent to our servers</li>
+        <li>Any biometric data</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span> Third-party services</h2>
+      <p>MoveToUnlock integrates with the following third-party services:</p>
+      <ul>
+        <li><strong>Google ML Kit</strong> — for on-device pose detection. Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+        <li><strong>Strava</strong> — for activity import (optional). Subject to <a href="https://www.strava.com/legal/privacy" target="_blank">Strava's Privacy Policy</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span> Your rights</h2>
+      <p>Since we do not collect personal data on our servers, there is nothing to request deletion of on our end. All data related to app usage is stored on your device and can be removed by uninstalling the app.</p>
+      <p>For data held by Strava, please refer to <a href="https://www.strava.com/legal/privacy" target="_blank">Strava's Privacy Policy</a> and their data deletion tools.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span> Changes to this policy</h2>
+      <p>If we make significant changes to this privacy policy, we will update the date at the top of this page. We encourage you to review this page periodically. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">9</span> Contact</h2>
+      <p>Questions, concerns, or feedback about your privacy? Reach out anytime:</p>
+      <p><strong>Noah Floury</strong><br><a href="mailto:contact@movetounlock.app">contact@movetounlock.app</a></p>
+    </section>
+  </div>
+
+  <!-- ===== FRANÇAIS ===== -->
+  <div class="lang-content" id="lang-fr">
+    <h1>Politique de confidentialité</h1>
+    <p class="subtitle">Dernière mise à jour : Avril 2025 &nbsp;·&nbsp; MoveToUnlock par Noah Floury</p>
+
+    <div class="intro">
+      <strong>En résumé :</strong> MoveToUnlock ne collecte, ne stocke et ne vend aucune donnée personnelle sur un serveur. Tout reste sur votre appareil. Nous accédons à votre caméra uniquement pour compter les pompes, et à vos données Strava uniquement si vous choisissez explicitement de connecter votre compte.
+    </div>
+
+    <section>
+      <h2><span class="num">1</span> Qui sommes-nous</h2>
+      <p>MoveToUnlock est une application Android développée par <strong>Noah Floury</strong>. L'application vous permet de débloquer vos applications distrayantes en gagnant l'accès grâce à une activité physique — soit en faisant des pompes détectées par la caméra frontale de votre téléphone, soit en complétant des entraînements suivis dans Strava.</p>
+      <p>Pour toute question relative à cette politique, vous pouvez nous contacter à : <a href="mailto:contact@movetounlock.app">contact@movetounlock.app</a></p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span> Accès à la caméra</h2>
+      <p>MoveToUnlock utilise la caméra frontale de votre appareil pour détecter les mouvements de pompes en temps réel. Voici ce que vous devez savoir :</p>
+      <ul>
+        <li>Le traitement de la caméra s'effectue <strong>entièrement sur votre appareil</strong> grâce à Google ML Kit Pose Detection.</li>
+        <li>Aucune image vidéo n'est enregistrée, sauvegardée ou transmise.</li>
+        <li>La caméra n'est active que lors d'une session de détection de pompes.</li>
+        <li>Aucune image ni donnée biométrique ne quitte votre appareil.</li>
+      </ul>
+      <div class="highlight-box">
+        Le flux de votre caméra est utilisé en temps réel puis immédiatement supprimé. Nous ne le voyons jamais, ne le stockons jamais, et ne le partageons jamais.
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span> Intégration Strava</h2>
+      <p>La connexion de votre compte Strava est entièrement optionnelle. Si vous choisissez de le connecter, voici comment nous gérons vos données :</p>
+      <ul>
+        <li>Nous accédons à votre profil et à vos activités Strava <strong>uniquement pour vérifier que vous avez complété un entraînement</strong> et déverrouiller les applications en conséquence.</li>
+        <li>Votre token d'accès Strava est stocké <strong>localement sur votre appareil</strong> (SharedPreferences Android). Il n'est jamais envoyé ni stocké sur nos serveurs.</li>
+        <li>Nous utilisons un serveur intermédiaire sécurisé (Cloudflare Worker) uniquement pour gérer l'échange de token OAuth — aucune donnée d'athlète ne transite ou n'est conservée par ce serveur.</li>
+        <li>Nous ne lisons, stockons, analysons ni partageons aucun détail de vos activités Strava au-delà de ce qui est nécessaire pour confirmer la complétion d'un entraînement.</li>
+      </ul>
+      <p>Vous pouvez déconnecter votre compte Strava à tout moment depuis l'application. Lorsque vous le faites, votre token d'accès est immédiatement supprimé de votre appareil et révoqué côté Strava.</p>
+      <p style="margin-top:16px"><span class="strava-badge">⚡ Powered by Strava</span></p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> Fonctionnalité de blocage d'applications</h2>
+      <p>MoveToUnlock utilise le Service d'accessibilité Android et les permissions UsageStats pour surveiller et bloquer l'accès aux applications que vous avez choisi de restreindre. Ces données :</p>
+      <ul>
+        <li>Sont traitées uniquement en local sur votre appareil.</li>
+        <li>Ne sont jamais transmises, stockées à distance, ni utilisées à d'autres fins que l'application des restrictions que vous avez vous-même définies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span> Données que nous ne collectons PAS</h2>
+      <p>Pour être complètement transparent, MoveToUnlock ne collecte pas :</p>
+      <ul>
+        <li>Votre nom, adresse email ou toute information de compte</li>
+        <li>Votre localisation</li>
+        <li>Les identifiants publicitaires</li>
+        <li>Les rapports de crash ou données analytiques envoyés à nos serveurs</li>
+        <li>Toute donnée biométrique</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span> Services tiers</h2>
+      <p>MoveToUnlock s'intègre avec les services tiers suivants :</p>
+      <ul>
+        <li><strong>Google ML Kit</strong> — pour la détection de posture sur l'appareil. Soumis à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>.</li>
+        <li><strong>Strava</strong> — pour l'import d'activités (optionnel). Soumis à la <a href="https://www.strava.com/legal/privacy" target="_blank">Politique de confidentialité de Strava</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span> Vos droits</h2>
+      <p>Puisque nous ne collectons pas de données personnelles sur nos serveurs, il n'y a rien à demander à supprimer de notre côté. Toutes les données liées à l'utilisation de l'application sont stockées sur votre appareil et peuvent être supprimées en désinstallant l'application.</p>
+      <p>Pour les données détenues par Strava, veuillez consulter la <a href="https://www.strava.com/legal/privacy" target="_blank">Politique de confidentialité de Strava</a> et leurs outils de suppression de données.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span> Modifications de cette politique</h2>
+      <p>Si nous apportons des modifications importantes à cette politique de confidentialité, nous mettrons à jour la date en haut de cette page. Nous vous encourageons à consulter cette page régulièrement. L'utilisation continue de l'application après la publication des modifications vaut acceptation de la politique mise à jour.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">9</span> Contact</h2>
+      <p>Des questions, des préoccupations ou des retours sur votre confidentialité ? Contactez-nous à tout moment :</p>
+      <p><strong>Noah Floury</strong><br><a href="mailto:contact@movetounlock.app">contact@movetounlock.app</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Noah Floury · MoveToUnlock · <a href="mailto:contact@movetounlock.app">contact@movetounlock.app</a></p>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelector('[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+    document.documentElement.lang = lang;
+  }
+</script>
+
+</body>
+</html>
