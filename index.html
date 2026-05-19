@@ -161,6 +161,32 @@
       font-size: 15px;
     }
 
+    .delete-box {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 16px 0;
+    }
+
+    .delete-box h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .delete-box a {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
     .strava-badge {
       display: inline-flex;
       align-items: center;
@@ -203,10 +229,10 @@
   <!-- ===== ENGLISH ===== -->
   <div class="lang-content active" id="lang-en">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Last updated: April 2025 &nbsp;·&nbsp; MoveToUnlock by Noah Floury</p>
+    <p class="subtitle">Last updated: May 2026 &nbsp;·&nbsp; MoveToUnlock by Noah Floury</p>
 
     <div class="intro">
-      <strong>The short version:</strong> MoveToUnlock does not collect, store, or sell your personal data on any server. Everything stays on your device. We only access your camera to count push-ups, and your Strava data only if you explicitly choose to connect your account.
+      <strong>The short version:</strong> MoveToUnlock keeps most of your data on your device. If you create an account, your email address is stored securely via Supabase. We only access your camera to count push-ups, and your Strava data only if you explicitly choose to connect your account. We never sell your data.
     </div>
 
     <section>
@@ -230,7 +256,21 @@
     </section>
 
     <section>
-      <h2><span class="num">3</span> Strava integration</h2>
+      <h2><span class="num">3</span> User account and authentication</h2>
+      <p>Creating an account is optional. You can use MoveToUnlock without signing in. If you choose to create an account, here is what we collect and how we handle it:</p>
+      <ul>
+        <li><strong>Email address</strong> — used to identify your account and send a one-time password (OTP) for sign-in. Stored securely via Supabase.</li>
+        <li><strong>Google account</strong> — if you sign in with Google, we receive your Google ID and email address via OAuth. We do not access any other Google data.</li>
+        <li><strong>Username</strong> — an optional display name you can set in the app, stored locally on your device and in your Supabase profile.</li>
+      </ul>
+      <p>Your account data is stored on Supabase's secure servers (EU region). Supabase is GDPR-compliant. We do not sell, share, or use your account data for advertising purposes.</p>
+      <div class="highlight-box">
+        You can continue using MoveToUnlock as a guest at any time — no account required for core features.
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> Strava integration</h2>
       <p>Connecting your Strava account is entirely optional. If you choose to connect it, here is how we handle your data:</p>
       <ul>
         <li>We access your Strava profile and activity data <strong>only to verify that you have completed a workout</strong> and unlock apps accordingly.</li>
@@ -243,8 +283,8 @@
     </section>
 
     <section>
-      <h2><span class="num">4</span> App-blocking functionality</h2>
-      <p>MoveToUnlock uses Android's Accessibility Service and UsageStats permissions to monitor and block access to apps you have chosen to restrict. This data:</p>
+      <h2><span class="num">5</span> App-blocking functionality</h2>
+      <p>MoveToUnlock uses Android's UsageStats permissions to monitor and block access to apps you have chosen to restrict. This data:</p>
       <ul>
         <li>Is processed locally on your device only.</li>
         <li>Is never transmitted, stored remotely, or used for any purpose other than enforcing the restrictions you set yourself.</li>
@@ -252,39 +292,59 @@
     </section>
 
     <section>
-      <h2><span class="num">5</span> Data we do NOT collect</h2>
+      <h2><span class="num">6</span> Data we do NOT collect</h2>
       <p>To be completely transparent, MoveToUnlock does not collect:</p>
       <ul>
-        <li>Your name, email address, or any account information</li>
         <li>Your location</li>
         <li>Advertising identifiers</li>
         <li>Crash reports or analytics sent to our servers</li>
         <li>Any biometric data</li>
+        <li>Any Strava activity details beyond workout confirmation</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">6</span> Third-party services</h2>
+      <h2><span class="num">7</span> Account deletion</h2>
+      <p>You have the right to request the deletion of your account and all associated data at any time. Here is what gets deleted:</p>
+      <ul>
+        <li>Your email address and profile stored on Supabase</li>
+        <li>Your username and any friends list data</li>
+        <li>All app data stored locally on your device (cleared on uninstall)</li>
+      </ul>
+      <p>To request account deletion, send an email to the address below with the subject line <strong>"Account deletion request"</strong> and include the email address associated with your account. We will process your request within 7 days.</p>
+      <div class="delete-box">
+        <h3>Request account deletion</h3>
+        <p>Send an email to <strong>grillons.apps@gmail.com</strong> with the subject:<br><em>"Account deletion request"</em></p>
+        <p>Include the email address linked to your account. We will confirm deletion within 7 days.</p>
+        <a href="mailto:grillons.apps@gmail.com?subject=Account%20deletion%20request">Send deletion request →</a>
+      </div>
+      <p>You can also delete your account directly from the app by going to your profile and tapping "Sign out", then contacting us to confirm full data removal.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span> Third-party services</h2>
       <p>MoveToUnlock integrates with the following third-party services:</p>
       <ul>
         <li><strong>Google ML Kit</strong> — for on-device pose detection. Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
         <li><strong>Strava</strong> — for activity import (optional). Subject to <a href="https://www.strava.com/legal/privacy" target="_blank">Strava's Privacy Policy</a>.</li>
+        <li><strong>Supabase</strong> — for user authentication and profile storage. Subject to <a href="https://supabase.com/privacy" target="_blank">Supabase's Privacy Policy</a>.</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">7</span> Your rights</h2>
-      <p>Since we do not collect personal data on our servers, there is nothing to request deletion of on our end. All data related to app usage is stored on your device and can be removed by uninstalling the app.</p>
+      <h2><span class="num">9</span> Your rights</h2>
+      <p>You have the right to access, correct, or delete your personal data at any time. Since most data is stored locally on your device, uninstalling the app removes it entirely.</p>
+      <p>For account data stored on Supabase, you can request access or deletion by contacting us at <a href="mailto:grillons.apps@gmail.com">grillons.apps@gmail.com</a>.</p>
       <p>For data held by Strava, please refer to <a href="https://www.strava.com/legal/privacy" target="_blank">Strava's Privacy Policy</a> and their data deletion tools.</p>
     </section>
 
     <section>
-      <h2><span class="num">8</span> Changes to this policy</h2>
+      <h2><span class="num">10</span> Changes to this policy</h2>
       <p>If we make significant changes to this privacy policy, we will update the date at the top of this page. We encourage you to review this page periodically. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
     </section>
 
     <section>
-      <h2><span class="num">9</span> Contact</h2>
+      <h2><span class="num">11</span> Contact</h2>
       <p>Questions, concerns, or feedback about your privacy? Reach out anytime:</p>
       <p><strong>Noah Floury</strong><br><a href="mailto:grillons.apps@gmail.com">grillons.apps@gmail.com</a></p>
     </section>
@@ -293,10 +353,10 @@
   <!-- ===== FRANÇAIS ===== -->
   <div class="lang-content" id="lang-fr">
     <h1>Politique de confidentialité</h1>
-    <p class="subtitle">Dernière mise à jour : Avril 2025 &nbsp;·&nbsp; MoveToUnlock par Noah Floury</p>
+    <p class="subtitle">Dernière mise à jour : Mai 2026 &nbsp;·&nbsp; MoveToUnlock par Noah Floury</p>
 
     <div class="intro">
-      <strong>En résumé :</strong> MoveToUnlock ne collecte, ne stocke et ne vend aucune donnée personnelle sur un serveur. Tout reste sur votre appareil. Nous accédons à votre caméra uniquement pour compter les pompes, et à vos données Strava uniquement si vous choisissez explicitement de connecter votre compte.
+      <strong>En résumé :</strong> MoveToUnlock conserve la plupart de vos données sur votre appareil. Si vous créez un compte, votre adresse email est stockée de manière sécurisée via Supabase. Nous accédons à votre caméra uniquement pour compter les pompes, et à vos données Strava uniquement si vous choisissez explicitement de connecter votre compte. Nous ne vendons jamais vos données.
     </div>
 
     <section>
@@ -320,7 +380,21 @@
     </section>
 
     <section>
-      <h2><span class="num">3</span> Intégration Strava</h2>
+      <h2><span class="num">3</span> Compte utilisateur et authentification</h2>
+      <p>La création d'un compte est optionnelle. Vous pouvez utiliser MoveToUnlock sans vous connecter. Si vous choisissez de créer un compte, voici ce que nous collectons et comment nous le gérons :</p>
+      <ul>
+        <li><strong>Adresse email</strong> — utilisée pour identifier votre compte et envoyer un mot de passe à usage unique (OTP) pour la connexion. Stockée de manière sécurisée via Supabase.</li>
+        <li><strong>Compte Google</strong> — si vous vous connectez avec Google, nous recevons votre identifiant Google et votre adresse email via OAuth. Nous n'accédons à aucune autre donnée Google.</li>
+        <li><strong>Nom d'utilisateur</strong> — un nom d'affichage optionnel que vous pouvez définir dans l'application, stocké localement sur votre appareil et dans votre profil Supabase.</li>
+      </ul>
+      <p>Vos données de compte sont stockées sur les serveurs sécurisés de Supabase (région EU). Supabase est conforme au RGPD. Nous ne vendons, ne partageons ni n'utilisons vos données de compte à des fins publicitaires.</p>
+      <div class="highlight-box">
+        Vous pouvez continuer à utiliser MoveToUnlock en tant qu'invité à tout moment — aucun compte n'est requis pour les fonctionnalités principales.
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span> Intégration Strava</h2>
       <p>La connexion de votre compte Strava est entièrement optionnelle. Si vous choisissez de le connecter, voici comment nous gérons vos données :</p>
       <ul>
         <li>Nous accédons à votre profil et à vos activités Strava <strong>uniquement pour vérifier que vous avez complété un entraînement</strong> et déverrouiller les applications en conséquence.</li>
@@ -333,8 +407,8 @@
     </section>
 
     <section>
-      <h2><span class="num">4</span> Fonctionnalité de blocage d'applications</h2>
-      <p>MoveToUnlock utilise le Service d'accessibilité Android et les permissions UsageStats pour surveiller et bloquer l'accès aux applications que vous avez choisi de restreindre. Ces données :</p>
+      <h2><span class="num">5</span> Fonctionnalité de blocage d'applications</h2>
+      <p>MoveToUnlock utilise les permissions UsageStats Android pour surveiller et bloquer l'accès aux applications que vous avez choisi de restreindre. Ces données :</p>
       <ul>
         <li>Sont traitées uniquement en local sur votre appareil.</li>
         <li>Ne sont jamais transmises, stockées à distance, ni utilisées à d'autres fins que l'application des restrictions que vous avez vous-même définies.</li>
@@ -342,46 +416,66 @@
     </section>
 
     <section>
-      <h2><span class="num">5</span> Données que nous ne collectons PAS</h2>
+      <h2><span class="num">6</span> Données que nous ne collectons PAS</h2>
       <p>Pour être complètement transparent, MoveToUnlock ne collecte pas :</p>
       <ul>
-        <li>Votre nom, adresse email ou toute information de compte</li>
         <li>Votre localisation</li>
         <li>Les identifiants publicitaires</li>
         <li>Les rapports de crash ou données analytiques envoyés à nos serveurs</li>
         <li>Toute donnée biométrique</li>
+        <li>Les détails de vos activités Strava au-delà de la confirmation d'entraînement</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">6</span> Services tiers</h2>
+      <h2><span class="num">7</span> Suppression de compte</h2>
+      <p>Vous avez le droit de demander la suppression de votre compte et de toutes les données associées à tout moment. Voici ce qui est supprimé :</p>
+      <ul>
+        <li>Votre adresse email et profil stockés sur Supabase</li>
+        <li>Votre nom d'utilisateur et les données de votre liste d'amis</li>
+        <li>Toutes les données de l'application stockées localement sur votre appareil (supprimées à la désinstallation)</li>
+      </ul>
+      <p>Pour demander la suppression de votre compte, envoyez un email à l'adresse ci-dessous avec l'objet <strong>"Demande de suppression de compte"</strong> en indiquant l'adresse email associée à votre compte. Nous traiterons votre demande dans un délai de 7 jours.</p>
+      <div class="delete-box">
+        <h3>Demander la suppression du compte</h3>
+        <p>Envoyez un email à <strong>grillons.apps@gmail.com</strong> avec l'objet :<br><em>"Demande de suppression de compte"</em></p>
+        <p>Indiquez l'adresse email liée à votre compte. Nous confirmerons la suppression sous 7 jours.</p>
+        <a href="mailto:grillons.apps@gmail.com?subject=Demande%20de%20suppression%20de%20compte">Envoyer la demande →</a>
+      </div>
+      <p>Vous pouvez également vous déconnecter directement depuis l'application via votre profil, puis nous contacter pour confirmer la suppression complète de vos données.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span> Services tiers</h2>
       <p>MoveToUnlock s'intègre avec les services tiers suivants :</p>
       <ul>
         <li><strong>Google ML Kit</strong> — pour la détection de posture sur l'appareil. Soumis à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>.</li>
         <li><strong>Strava</strong> — pour l'import d'activités (optionnel). Soumis à la <a href="https://www.strava.com/legal/privacy" target="_blank">Politique de confidentialité de Strava</a>.</li>
+        <li><strong>Supabase</strong> — pour l'authentification et le stockage du profil. Soumis à la <a href="https://supabase.com/privacy" target="_blank">Politique de confidentialité de Supabase</a>.</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">7</span> Vos droits</h2>
-      <p>Puisque nous ne collectons pas de données personnelles sur nos serveurs, il n'y a rien à demander à supprimer de notre côté. Toutes les données liées à l'utilisation de l'application sont stockées sur votre appareil et peuvent être supprimées en désinstallant l'application.</p>
+      <h2><span class="num">9</span> Vos droits</h2>
+      <p>Vous avez le droit d'accéder, de corriger ou de supprimer vos données personnelles à tout moment. La plupart des données étant stockées localement sur votre appareil, désinstaller l'application les supprime entièrement.</p>
+      <p>Pour les données de compte stockées sur Supabase, vous pouvez demander l'accès ou la suppression en nous contactant à <a href="mailto:grillons.apps@gmail.com">grillons.apps@gmail.com</a>.</p>
       <p>Pour les données détenues par Strava, veuillez consulter la <a href="https://www.strava.com/legal/privacy" target="_blank">Politique de confidentialité de Strava</a> et leurs outils de suppression de données.</p>
     </section>
 
     <section>
-      <h2><span class="num">8</span> Modifications de cette politique</h2>
+      <h2><span class="num">10</span> Modifications de cette politique</h2>
       <p>Si nous apportons des modifications importantes à cette politique de confidentialité, nous mettrons à jour la date en haut de cette page. Nous vous encourageons à consulter cette page régulièrement. L'utilisation continue de l'application après la publication des modifications vaut acceptation de la politique mise à jour.</p>
     </section>
 
     <section>
-      <h2><span class="num">9</span> Contact</h2>
+      <h2><span class="num">11</span> Contact</h2>
       <p>Des questions, des préoccupations ou des retours sur votre confidentialité ? Contactez-nous à tout moment :</p>
       <p><strong>Noah Floury</strong><br><a href="mailto:grillons.apps@gmail.com">grillons.apps@gmail.com</a></p>
     </section>
   </div>
 
   <footer>
-    <p>© 2025 Noah Floury · MoveToUnlock · <a href="mailto:grillons.apps@gmail.com">grillons.apps@gmail.com</a></p>
+    <p>© 2026 Noah Floury · MoveToUnlock · <a href="mailto:grillons.apps@gmail.com">grillons.apps@gmail.com</a></p>
   </footer>
 
 </div>
